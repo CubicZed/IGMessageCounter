@@ -1,15 +1,13 @@
 const fs = require('fs');
 
-// configure sender names in ./config.json
+// configure sender names in config.json
 const config = require('./config.json')
-const sender1 = config.sender1
-const sender2 = config.sender2
-const senders = [sender1, sender2];
+const senders = config.senders;
 
 // initialize messages/month from people
 let messagesPerMonthFromPeople = {
-	august: {},
-	september: {},
+  august: {},
+  september: {},
   october: {},
   november: {},
   december: {},
